@@ -497,7 +497,9 @@ TOP BANNER
 
 @media only screen and (min-width: 830px) {
   #top-banner {
-    height: 60vh;
+    /* height: 60vh; */
+    height: 35em;
+    /* border: 1px solid blue; */
     z-index: initial;
   }
   #top-banner-content {
@@ -518,10 +520,11 @@ TOP BANNER
 
 @media only screen and (min-width: 1060px) {
   #top-banner {
-    height: calc(100vh - var(--padding));
+    /* height: calc(100vh - var(--padding)); */
+    height: 51em;
   }
   #shoe-gif {
-    max-width: 750px;
+    max-width: 46.875em;
     top: 15em;
   }
   #top-banner-content {
