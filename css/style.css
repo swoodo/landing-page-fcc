@@ -520,6 +520,12 @@ TOP BANNER
   
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #top-banner {
+    background: url(../images/wall4@2X.png) repeat;
+  }
+}
+
 /*******************
 FILM
 *******************/
