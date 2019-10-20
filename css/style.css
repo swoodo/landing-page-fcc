@@ -26,6 +26,10 @@ body {
   z-index: -2;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
 }
@@ -234,8 +238,8 @@ h1 {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
   padding-bottom: 0.4em;
 }
 
@@ -244,7 +248,7 @@ h2 {
   padding: var(--padding) 0 calc(var(--padding) / 2);
   text-transform: uppercase;
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h2::after {
@@ -267,10 +271,19 @@ h3 {
 
 .about-text p {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.3rem;
   text-align: justify;
 }
 
+@media only screen and (min-width: 470px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
 
 @media only screen and (min-width: 830px) {
   h1 {
@@ -361,7 +374,11 @@ BUTTONS
 }
 
 .btn.margin-left {
-  margin-left: 1em;
+  margin-left: 0;
+}
+
+.btn.hide {
+  display: none;
 }
 
 .btn-yellow {
@@ -396,6 +413,16 @@ BUTTONS
 
 .btn-footer:hover {
   border-color: var(--primary-color);
+}
+
+@media only screen and (min-width: 470px) {
+  .btn.margin-left {
+    margin-left: 1em;
+  }
+
+  .btn.hide {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 1060px) {
@@ -441,6 +468,17 @@ TOP BANNER
   z-index: 1;
 }
 
+.top-banner-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.top-banner-buttons {
+  
+}
+
 @media only screen and (min-width: 830px) {
   #top-banner {
     height: 60vh;
@@ -473,6 +511,7 @@ TOP BANNER
   #top-banner-content {
     top: var(--padding);
   }
+  
 }
 
 /*******************
@@ -494,6 +533,7 @@ FILM
 }
 
 #film::after {
+  display: none;
   content: "";
   width: 50%;
   height: 75%;
@@ -516,6 +556,12 @@ FILM
 
 .btn-film {
   margin-top: var(--padding);
+}
+
+@media only screen and (min-width: 470px) {
+  #film::after {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 830px) {
@@ -725,16 +771,32 @@ CONNECT
 
 .newsletter-form form {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.newsletter-form form input {
-  height: 100%;
-  
+.store-locator-box a {
+
 }
+
+.store-locator-btn {
+}
+
+.newsletter-form form input:first-child {
+  height: 100%;
+  width: 100%;
+}
+
+
 
 .newsletter-input {
   padding: 1em 0 1em 1em;
   border: 5px solid white;
+  
+}
+
+#submit {
+  margin-top: 0.6em;
 }
 
 .social-box {
@@ -793,6 +855,13 @@ CONNECT
 }
 
 @media only screen and (min-width: 853px) {
+  #submit {
+    margin-top: 0em;
+  }
+  .newsletter-form form input:first-child {
+    width: auto;
+  }
+
   .footer-logo,
   .social-box,
   .newsletter-box,
