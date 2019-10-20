@@ -18,6 +18,7 @@
   </div>
 
   <header id="header">
+    <div class="ignore-me"></div>
     <div class="container-nav">
       <!-- Logo -->
       <div id="logo">
@@ -31,15 +32,15 @@
         </div>
 
         <ul id="nav-small">
-          <a href="#about" class="nav-link"><li>About</li></a>
-          <a href="#collection" class="nav-link"><li>Collection</li></a>
-          <a href="#connect" class="nav-link"><li>Connect</li></a>
+          <a class="nav-link" href="#about" ><li>About</li></a>
+          <a class="nav-link" href="#collection" ><li>Collection</li></a>
+          <a class="nav-link" href="#connect" ><li>Connect</li></a>
         </ul>
 
         <ul id="nav-large">
-          <li class="nav-link"><a href="#about">About</a></li>
-          <li class="nav-link"><a href="#collection">Collection</a></li>
-          <li class="nav-link"><a href="#connect">Connect</a></li>
+          <a class="nav-link" href="#about" ><li class="nav-dot">About</li></a>
+          <a class="nav-link" href="#collection" ><li class="nav-dot">Collection</li></a>
+          <a class="nav-link" href="#connect" ><li class="nav-dot">Connect</li></a>
         </ul>
       </nav>
 
@@ -172,9 +173,9 @@
           <div class="newsletter-description text-align-right">Receive product news and updates in your inbox</div>
           <div class="newsletter-form">
             <!-- Newsletter Form -->
-            <form action="https://www.freecodecamp.com/email-submit" id="form">
-              <input class="newsletter-input"type="email" id="email" placeholder="john.doe@gmail.com" required>
-              <input class="btn btn-footer" type="submit" id="submit" value="Submit">
+            <form action="https://www.freecodecamp.com/email-submit" id="form" method="post">
+              <input class="newsletter-input"type="email" name="email" id="email" placeholder="john.doe@gmail.com" required>
+              <input class="btn btn-footer" name="submit" type="submit" id="submit" value="Submit">
             </form>
           </div>
         </div>

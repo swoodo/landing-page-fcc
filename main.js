@@ -12,7 +12,7 @@ function mobileMenuReveal(e) {
     navSmall.style.top='7em';
     icon.style.transform='rotate(90deg)'
   } else {
-    navSmall.style.top='-12em';
+    navSmall.style.top='-20em';
     icon.style.transform='rotate(0deg)'
   }
 }

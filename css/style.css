@@ -57,6 +57,10 @@ outline: 1px solid slategrey;
   background: var(--primary-color);
 }
 
+#header{
+  position: relative;
+}
+
 /*******************
 CONTAINERS
 *******************/
@@ -133,6 +137,10 @@ CONTAINERS
 /*******************
 HEADER & NAVIGATION
 *******************/
+.ignore-me {
+  position: fixed;
+}
+
 header {
   background: white;
   background: url(../images/wall4.png) repeat;
@@ -203,8 +211,7 @@ header {
   padding-left: 1em;
 }
 
-.nav-link,
-.nav-link a {
+.nav-link {
   color: var(--font-color);
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
@@ -213,10 +220,13 @@ header {
   text-transform: uppercase;
 }
 
-.nav-link a:hover {
+.nav-link:hover {
   color: var(--primary-color);
-  border-bottom: 2px dashed var(--primary-color);
-  padding-bottom: 0.4em;
+}
+
+.nav-dot:hover {
+  border-bottom: 3px dashed var(--primary-color);
+  padding-bottom: 0.3em;
 }
 
 @media only screen and (min-width: 830px) {
