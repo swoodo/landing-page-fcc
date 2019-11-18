@@ -820,7 +820,9 @@ CONNECT
   padding: 1em 0 1em 1em;
   border: 5px solid white;
   border-radius: 0;
-  --webkit-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   
 }
 
