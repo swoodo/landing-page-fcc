@@ -147,6 +147,16 @@ header {
   position: relative;
 }
 
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), 
+only screen and (-o-min-device-pixel-ratio: 3/2), 
+only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min-devicepixel-ratio: 1.5), 
+only screen and (min-resolution: 1.5dppx) {
+  header {
+    background: url(../images/wall4@2X.png) repeat;
+  }
+}
+
 #logo {
   display: flex;
   justify-content: flex-start;
@@ -458,9 +468,19 @@ TOP BANNER
 *******************/
 #top-banner {
   background: white;
-  background: url(../images/wall4.png);
+  background: url(../images/wall4.png) repeat;
   position: relative;
   z-index: -2;
+}
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), 
+only screen and (-o-min-device-pixel-ratio: 3/2), 
+only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min-devicepixel-ratio: 1.5), 
+only screen and (min-resolution: 1.5dppx) {
+  #top-banner{
+    background: url(../images/wall4@2X.png) repeat;
+  }
 }
 
 #top-banner-content {
@@ -533,11 +553,6 @@ TOP BANNER
   
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  #top-banner {
-    background: url(../images/wall4@2X.png) repeat;
-  }
-}
 
 /*******************
 FILM
